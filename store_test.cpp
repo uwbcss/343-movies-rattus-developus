@@ -36,23 +36,21 @@ void testStore1() {
 }
 
 void testStore2() {
-  // cout << "=====================================" << endl;
   cout << "Start testStore2" << endl;
-
-  InputProcessor::processFile("data4commands.txt");
-
-  cout << "End testStore2" << endl;
-  // cout << "=====================================" << endl;
-}
-
-void testStoreFinal() {
-  cout << "Start testStoreFinal" << endl;
 
   InputProcessor::processLine("X");
   InputProcessor::processLine("B 1111 D X 10 1941 Humphrey Bogart");
   InputProcessor::processLine("B 4321 D C 3 1971 Ruth Gordon");
   InputProcessor::processLine("B 1111 D C 3 1971 Ruthy Gordon");
   InputProcessor::processLine("R 1111 D F You've Got Mail, 1998");
+
+  cout << "End testStore2" << endl;
+}
+
+void testStoreFinal() {
+  cout << "Start testStoreFinal" << endl;
+
+  InputProcessor::processFile("data4commands.txt");
 
   cout << "End testStoreFinal" << endl;
 }
